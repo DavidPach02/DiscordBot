@@ -22,7 +22,5 @@ class MyClient(discord.Client):
 intents = discord.Intents.default()
 intents.message_content = True
 
-print(requests.get('https://scryfall.com/search?q=o%3Aflying&order=color&as=grid').text)
-
-#client = MyClient(intents=intents)
-#client.run('MTM5NjY1MjA0NTg1NTEwMTA1OQ.GvEQeE.xSDILSHJiOUd8wjGyLIJgY8NS49gPsqoqSp3y8')
+client = MyClient(intents=intents)
+client.run('MTM5NjY1MjA0NTg1NTEwMTA1OQ.GvEQeE.xSDILSHJiOUd8wjGyLIJgY8NS49gPsqoqSp3y8')
